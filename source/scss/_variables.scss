@@ -1,3 +1,29 @@
 $deep-blue:#274C5B;
 $light-blue: #7EB693;
 $bg-color:#F9F8F8;
+$gray: #525C60;
+$border-color: #D5D5D5;
+$bg-logo: #EFF6F1;
+
+$tablet: 768px;
+$mobile: 425px;
+
+@mixin footerTitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: 0.36px;
+    color: $deep-blue;
+}
+
+@mixin footerText {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: 0.36px;
+    color: $gray;
+}
