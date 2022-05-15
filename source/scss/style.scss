@@ -6,6 +6,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -13,8 +14,9 @@ body {
 }
 
 .container {
-    max-width: 1390px;
-    width: 90%;
+    max-width: 1410px;
+    width: 100%;
+    padding: 20px 15px;
     margin: 0 auto;
 }
 

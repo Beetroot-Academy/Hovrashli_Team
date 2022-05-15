@@ -5,6 +5,12 @@
   flex-direction: row;
   justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .footer__title {
   font-family: "Roboto";
   font-style: normal;
@@ -20,15 +26,56 @@
   border-left: 1px solid #D5D5D5;
   border-right: 1px solid #D5D5D5;
 }
+@media screen and (max-width: 768px) {
+  .footer__main {
+    width: 100%;
+    order: 1;
+    text-align: center;
+    border: none;
+    margin-bottom: 50px;
+  }
+}
 .footer__contact {
   order: 1;
   text-align: right;
   margin-right: 20px;
 }
+@media screen and (max-width: 768px) {
+  .footer__contact {
+    width: 100%;
+    order: 3;
+    text-align: center;
+  }
+}
 .footer__utility {
   order: 3;
   text-align: left;
   margin-left: 20px;
+}
+@media screen and (max-width: 768px) {
+  .footer__utility {
+    width: 100%;
+    order: 2;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 0;
+  }
+}
+.footer__logo {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.footer__logo--list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.footer__logo--item {
+  background-color: #EFF6F1;
+  border-radius: 100px;
+  padding: 20px;
+  transition: color 0.8 ease-in-out;
 }
 
 .main__slogan {
@@ -41,6 +88,7 @@
   color: #525C60;
   text-align: center;
   padding: 0 50px;
+  margin-bottom: 60px;
 }
 
 .contact__item {
@@ -52,6 +100,7 @@
   letter-spacing: 0.36px;
   color: #525C60;
   margin-bottom: 5px;
+  font-weight: 700;
 }
 .contact__desc {
   font-family: "Open Sans";
@@ -76,9 +125,6 @@
   color: #525C60;
 }
 
-.utility {
-  text-align: left;
-}
 .utility__link {
   font-family: "Open Sans";
   font-style: normal;
@@ -95,9 +141,24 @@
   margin-bottom: 35px;
 }
 
+.logo {
+  fill: #274C5B;
+  width: 30px;
+  height: 30px;
+}
+
+.footer__logo--item:hover {
+  background-color: #274C5B;
+}
+
+.footer__logo--item:hover > .logo {
+  fill: #F9F8F8;
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -105,8 +166,9 @@ body {
 }
 
 .container {
-  max-width: 1390px;
-  width: 90%;
+  max-width: 1410px;
+  width: 100%;
+  padding: 20px 15px;
   margin: 0 auto;
 }
 

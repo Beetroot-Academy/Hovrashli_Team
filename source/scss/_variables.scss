@@ -3,6 +3,10 @@ $light-blue: #7EB693;
 $bg-color:#F9F8F8;
 $gray: #525C60;
 $border-color: #D5D5D5;
+$bg-logo: #EFF6F1;
+
+$tablet: 768px;
+$mobile: 425px;
 
 @mixin footerTitle {
     font-family: 'Roboto';
