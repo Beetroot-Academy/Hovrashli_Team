@@ -1,3 +1,100 @@
+/* SASS mixin start */
+/* SASS mixin end */
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footer__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 42px;
+  letter-spacing: 0.36px;
+  color: #274C5B;
+}
+.footer__main {
+  order: 2;
+  width: 50%;
+  border-left: 1px solid #D5D5D5;
+  border-right: 1px solid #D5D5D5;
+}
+.footer__contact {
+  order: 1;
+  text-align: right;
+  margin-right: 20px;
+}
+.footer__utility {
+  order: 3;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.main__slogan {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+  text-align: center;
+  padding: 0 50px;
+}
+
+.contact__item {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+  margin-bottom: 5px;
+}
+.contact__desc {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+  margin-bottom: 40px;
+}
+.contact__title {
+  margin-bottom: 20px;
+}
+.contact__link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+}
+
+.utility {
+  text-align: left;
+}
+.utility__link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+}
+.utility__item {
+  margin-bottom: 24px;
+}
+.utility__title {
+  margin-bottom: 35px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +107,7 @@ body {
 .container {
   max-width: 1390px;
   width: 90%;
+  margin: 0 auto;
 }
 
 ul, ol {
