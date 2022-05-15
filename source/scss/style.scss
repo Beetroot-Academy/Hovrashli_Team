@@ -1,17 +1,21 @@
 @use 'variables' as *;
 @use 'font-mixin' as *;
+@use 'header';
 
 
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: 'Open Sans', sans-serif;
 }
 .container{
-    max-width: 1390px;
-    width: 90%;
+    max-width: 1380px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 ul, ol{
     list-style: none;
@@ -25,3 +29,13 @@ a{
     display: block;
     color: black;
 }
+.title {
+    font-family: 'Yellowtail';
+    font-style: normal;
+    font-weight: 400;
+    @include fluid-font(27px, 36px);
+    line-height: 1.8;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+    color: $light-blue;
+} 
