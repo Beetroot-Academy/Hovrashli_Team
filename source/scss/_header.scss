@@ -1,0 +1,121 @@
+@use 'variables' as *;
+@use 'font-mixin' as *;
+
+.header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+
+    &_list {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+
+
+
+    &_link {
+        font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 1.7;    
+            letter-spacing: 0.36px;
+            color: $deep-blue;
+            transition: color 0.3s ease-in-out;
+            &:hover{
+                color: $light-blue;
+            }
+    }
+}
+.hero {
+    margin-bottom: 140px;
+
+    background-image: url('/assets/hero.png');
+    background-size: cover;
+    background-position: center;
+
+
+
+    
+
+    &__title {
+        padding-top: 220px;
+    }
+
+
+    &__subtitle {
+        font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 70px;
+            line-height: 1.2;
+            letter-spacing: 0.36px;
+            color: #274C5B;
+            width: 40%;
+            padding-bottom: 30px;
+    }
+
+
+    &__btn {
+        margin-bottom: 250px;
+        background-color: #EFD372;
+    }
+}
+
+.container {
+    width: 100%;
+}
+
+
+.subtitle {}
+
+.btn {
+    // display: flex;
+    // align-items: center;
+    // justify-content: end;
+    // padding: 0px 9px;
+    // gap: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1px 9px;
+    gap: 25px;
+    border: none;
+    border-radius: 16px;
+    width: 200px;
+    height: 80px;
+    &__arrow {
+        position: relative;
+        display: inline-block;
+       width: 38px;
+       height: 34px;
+       background-color: #335B6B; 
+       border-radius: 100px ;
+       &::after{
+           content: '';
+           position: absolute;
+           display: block;
+           background-image: url(/assets/arrow.svg);
+           background-repeat: no-repeat;
+           background-position: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+           width: 18px;
+            height: 15px;
+       }
+    }
+    &__text{
+        display: inline-block;
+        margin: 25px 25px 25px 33px;
+    }
+}
+
