@@ -2,8 +2,7 @@
 /* SASS mixin end */
 .footer__container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
 }
 @media screen and (max-width: 768px) {
   .footer__container {
@@ -21,13 +20,25 @@
   color: #274C5B;
 }
 .footer__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .footer__main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.footer__center {
   order: 2;
   width: 50%;
   border-left: 1px solid #D5D5D5;
   border-right: 1px solid #D5D5D5;
+  margin-bottom: 150px;
 }
 @media screen and (max-width: 768px) {
-  .footer__main {
+  .footer__center {
     width: 100%;
     order: 1;
     text-align: center;
@@ -77,8 +88,22 @@
   padding: 20px;
   transition: color 0.8 ease-in-out;
 }
+.footer__bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px 0 0 0;
+  border-top: 1px solid #D5D5D5;
+}
+@media screen and (max-width: 768px) {
+  .footer__bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
-.main__slogan {
+.center__slogan {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
@@ -139,6 +164,27 @@
 }
 .utility__title {
   margin-bottom: 35px;
+}
+
+.bar__text {
+  display: flex;
+  flex-direction: row;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+}
+.bar__link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.36px;
+  color: #274C5B;
 }
 
 .logo {
