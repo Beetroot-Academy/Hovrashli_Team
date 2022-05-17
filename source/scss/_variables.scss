@@ -27,3 +27,13 @@ $mobile: 425px;
     letter-spacing: 0.36px;
     color: $gray;
 }
+
+@mixin footerBarText {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: 0.36px;
+    color: $deep-blue;
+}
