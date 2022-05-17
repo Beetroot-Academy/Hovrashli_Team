@@ -105,10 +105,305 @@
 .info-block__icon-container {
   width: 15%;
 }
+.header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.header_link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.7;
+  letter-spacing: 0.36px;
+  color: #274C5B;
+  transition: color 0.3s ease-in-out;
+}
+.header_link:hover {
+  color: #7EB693;
+}
+
+.hero {
+  margin-bottom: 140px;
+  background-image: url("/assets/hero.png");
+  background-size: cover;
+  background-position: center;
+}
+.hero__title {
+  padding-top: 220px;
+}
+.hero__subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 1.2;
+  letter-spacing: 0.36px;
+  color: #274C5B;
+  width: 40%;
+  padding-bottom: 30px;
+}
+.hero__btn {
+  margin-bottom: 250px;
+  background-color: #EFD372;
+}
+
+.container {
+  width: 100%;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1px 9px;
+  gap: 25px;
+  border: none;
+  border-radius: 16px;
+  width: 200px;
+  height: 80px;
+}
+.btn__arrow {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 34px;
+  background-color: #335B6B;
+  border-radius: 100px;
+}
+.btn__arrow::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(/assets/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 15px;
+}
+.btn__text {
+  display: inline-block;
+  margin: 25px 25px 25px 33px;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.footer__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 42px;
+  letter-spacing: 0.36px;
+  color: #274C5B;
+}
+.footer__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .footer__main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.footer__center {
+  order: 2;
+  width: 50%;
+  border-left: 1px solid #D5D5D5;
+  border-right: 1px solid #D5D5D5;
+  margin-bottom: 150px;
+}
+@media screen and (max-width: 768px) {
+  .footer__center {
+    width: 100%;
+    order: 1;
+    text-align: center;
+    border: none;
+    margin-bottom: 50px;
+  }
+}
+.footer__contact {
+  order: 1;
+  text-align: right;
+  margin-right: 20px;
+}
+@media screen and (max-width: 768px) {
+  .footer__contact {
+    width: 100%;
+    order: 3;
+    text-align: center;
+  }
+}
+.footer__utility {
+  order: 3;
+  text-align: left;
+  margin-left: 20px;
+}
+@media screen and (max-width: 768px) {
+  .footer__utility {
+    width: 100%;
+    order: 2;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 0;
+  }
+}
+.footer__logo {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.footer__logo--list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.footer__logo--item {
+  background-color: #EFF6F1;
+  border-radius: 100px;
+  padding: 20px;
+  transition: color 0.8 ease-in-out;
+}
+.footer__bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px 0 0 0;
+  border-top: 1px solid #D5D5D5;
+}
+@media screen and (max-width: 768px) {
+  .footer__bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.center__slogan {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+  text-align: center;
+  padding: 0 50px;
+  margin-bottom: 60px;
+}
+
+.contact__item {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.contact__desc {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+  margin-bottom: 40px;
+}
+.contact__title {
+  margin-bottom: 20px;
+}
+.contact__link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+}
+
+.utility__link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+}
+.utility__item {
+  margin-bottom: 24px;
+}
+.utility__title {
+  margin-bottom: 35px;
+}
+
+.bar__text {
+  display: flex;
+  flex-direction: row;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+}
+.bar__link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.36px;
+  color: #274C5B;
+}
+
+.logo {
+  fill: #274C5B;
+  width: 30px;
+  height: 30px;
+}
+
+.footer__logo--item:hover {
+  background-color: #274C5B;
+}
+
+.footer__logo--item:hover > .logo {
+  fill: #F9F8F8;
+}
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -116,8 +411,10 @@ body {
 }
 
 .container {
-  max-width: 1390px;
-  width: 90%;
+  max-width: 1380px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 ul, ol {
@@ -133,5 +430,27 @@ a {
   cursor: pointer;
   display: block;
   color: black;
+}
+
+.title {
+  font-family: "Yellowtail";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  font-size: calc(27px + (36 - 27) * ((100vw - 325px) / (1240 - 325)));
+  line-height: 1.8;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  color: #7EB693;
+}
+@media screen and (max-width: 325px) {
+  .title {
+    font-size: 27px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .title {
+    font-size: 36px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

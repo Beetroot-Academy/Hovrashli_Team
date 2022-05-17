@@ -1,0 +1,172 @@
+@use 'variables' as *;
+@use 'font-mixin' as *;
+
+.footer {
+    &__container {
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+    }
+    }
+    &__title {
+        @include footerTitle;
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        @media screen and (max-width: $tablet) {
+            display: flex;
+            flex-direction: column;
+    }
+    }
+
+    &__center {
+        order: 2;
+        width: 50%;
+        border-left: 1px solid $border-color; 
+        border-right: 1px solid $border-color; 
+        margin-bottom: 150px;
+        @media screen and (max-width: $tablet) {
+            width: 100%;
+            order: 1;
+            text-align: center;
+            border: none;
+            margin-bottom: 50px;
+    }
+}
+
+    &__contact {
+        order: 1;
+        text-align: right;
+        margin-right: 20px;
+        @media screen and (max-width: $tablet) {
+            width: 100%;
+            order: 3;
+            text-align: center;
+    }
+    }
+
+    &__utility {
+        order: 3;
+        text-align: left;
+        margin-left: 20px;
+        @media screen and (max-width: $tablet) {
+            width: 100%;
+            order: 2;
+            text-align: center;
+            margin-bottom: 50px;
+            margin-left: 0;
+    }
+    }
+
+    &__logo {
+        text-align: center;
+        margin-bottom: 50px;
+        &--list {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+        }
+        &--item {
+            background-color: $bg-logo;
+            border-radius: 100px;
+            padding: 20px;
+            transition: color 0.8 ease-in-out;
+        }
+        }
+
+    &__bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px 0 0 0;
+        border-top: 1px solid $border-color;
+        @media screen and (max-width: $tablet) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    } 
+}
+
+
+.center {
+    &__slogan {
+        @include footerText;
+        text-align: center;
+        padding: 0 50px;
+        margin-bottom: 60px;
+    }
+}
+
+.contact {
+    &__list {
+    }
+
+    &__item {
+        @include footerText;
+        margin-bottom: 5px;
+        font-weight: 700;
+    }
+
+    &__desc {
+        @include footerText;
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__link {
+        @include footerText;
+    }
+}
+
+.utility {
+    &__list {
+    }
+
+    &__link {
+        @include footerText;
+    }
+
+    &__item {
+        margin-bottom: 24px;
+    }
+
+    &__title {
+        margin-bottom: 35px;
+    }
+}
+
+.bar {
+    &__text {   
+        display: flex;
+        flex-direction: row;
+        @include footerText;
+    }
+
+    &__link {
+        @include footerBarText;
+    }
+}
+
+.logo {
+    fill: $deep-blue;
+    width: 30px;
+    height: 30px;
+}
+
+.footer__logo--item:hover {
+    background-color: $deep-blue;
+}
+
+.footer__logo--item:hover > .logo {
+    fill: $bg-color;
+}
