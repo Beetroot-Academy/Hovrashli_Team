@@ -1,0 +1,115 @@
+@use 'variables' as *;
+@use 'font-mixin' as *;
+$desktop:1200px;
+$small-desktop:992px;
+$tablet:768px;
+$mobile:576px;
+.about-us {
+    background-color: $bg-color;
+
+    &__container {
+        gap: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 80px;
+        @media screen and (max-width: $tablet) {
+            gap:0px;
+            flex-direction: column-reverse;
+        }
+    }
+    
+
+    &__img {
+        width: 50%;
+        padding-top: 50px;
+        @media screen and (max-width: $tablet) {
+            width: 100%;
+            text-align: center;
+        }
+        
+    }
+
+    &__content {
+        width: 50%;
+        @media screen and (max-width: $tablet) {
+            width: 100%;
+            
+        }
+    }
+
+    &__title {
+        font-family: 'Yellowtail';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 65px;
+        color:$light-blue;
+        @media screen and (max-width: $tablet) {
+            text-align: center;
+        }
+    }
+
+    &__subtitle {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 58px;
+        color: $deep-blue;
+        @media screen and (max-width: $tablet) {
+            text-align: center;
+        }
+    }
+
+    &__text {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        color:$text-color;
+        @media screen and (max-width: $tablet) {
+            text-align: center;
+        }
+    }
+    
+    
+}
+
+.info-block {
+    padding-top: 30px;
+
+    &__title {
+        display: inline-block;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 35px;
+        color: $deep-blue;
+    }
+    &__content  {
+        width: 85%;
+    }
+    &__text {
+        color: $text-color;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        padding-bottom: 30px;
+    }
+    &__container {
+        display: flex;
+        flex-direction: row;
+    }
+  
+    &__icon-container {
+        width: 15%;
+    }
+
+}
+
+
