@@ -1,14 +1,16 @@
 @use 'variables' as *;
 @use 'font-mixin' as *;
 @use 'header';
+@use 'footer';
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Open Sans', sans-serif;
 }
 .container{
@@ -17,13 +19,16 @@ body{
     padding: 0 15px;
     margin: 0 auto;
 }
-ul, ol{
+
+ul, ol {
     list-style: none;
 }
-img{
+
+img{ 
     max-width: 100%;
 }
-a{
+
+a {
     text-decoration: none;
     cursor: pointer;
     display: block;
