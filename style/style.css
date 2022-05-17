@@ -11,7 +11,7 @@
 }
 
 .nav__list {
-  display: none;
+  display: flex;
   gap: 40px;
   align-items: center;
 }
@@ -125,6 +125,112 @@
     margin: 0 auto 70px;
   }
 }
+.about-us {
+  background-color: #F9F8F8;
+}
+.about-us__container {
+  gap: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  .about-us__container {
+    gap: 0px;
+    flex-direction: column-reverse;
+  }
+}
+.about-us__img {
+  width: 50%;
+  padding-top: 50px;
+}
+@media screen and (max-width: 768px) {
+  .about-us__img {
+    width: 100%;
+    text-align: center;
+  }
+}
+.about-us__content {
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .about-us__content {
+    width: 100%;
+  }
+}
+.about-us__title {
+  font-family: "Yellowtail";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 65px;
+  color: #7EB693;
+}
+@media screen and (max-width: 768px) {
+  .about-us__title {
+    text-align: center;
+  }
+}
+.about-us__subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 58px;
+  color: #274C5B;
+}
+@media screen and (max-width: 768px) {
+  .about-us__subtitle {
+    text-align: center;
+  }
+}
+.about-us__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #525C60;
+}
+@media screen and (max-width: 768px) {
+  .about-us__text {
+    text-align: center;
+  }
+}
+
+.info-block {
+  padding-top: 30px;
+}
+.info-block__title {
+  display: inline-block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  color: #274C5B;
+}
+.info-block__content {
+  width: 85%;
+}
+.info-block__text {
+  color: #525C60;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  padding-bottom: 30px;
+}
+.info-block__container {
+  display: flex;
+  flex-direction: row;
+}
+.info-block__icon-container {
+  width: 15%;
+}
+
 .footer__container {
   display: flex;
   flex-direction: column;
@@ -326,112 +432,6 @@
 
 .footer__logo--item:hover > .logo {
   fill: #F9F8F8;
-}
-
-.about-us {
-  background-color: #F9F8F8;
-}
-.about-us__container {
-  gap: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 80px;
-}
-@media screen and (max-width: 768px) {
-  .about-us__container {
-    gap: 0px;
-    flex-direction: column-reverse;
-  }
-}
-.about-us__img {
-  width: 50%;
-  padding-top: 50px;
-}
-@media screen and (max-width: 768px) {
-  .about-us__img {
-    width: 100%;
-    text-align: center;
-  }
-}
-.about-us__content {
-  width: 50%;
-}
-@media screen and (max-width: 768px) {
-  .about-us__content {
-    width: 100%;
-  }
-}
-.about-us__title {
-  font-family: "Yellowtail";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 65px;
-  color: #7EB693;
-}
-@media screen and (max-width: 768px) {
-  .about-us__title {
-    text-align: center;
-  }
-}
-.about-us__subtitle {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 58px;
-  color: #274C5B;
-}
-@media screen and (max-width: 768px) {
-  .about-us__subtitle {
-    text-align: center;
-  }
-}
-.about-us__text {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
-  color: #525C60;
-}
-@media screen and (max-width: 768px) {
-  .about-us__text {
-    text-align: center;
-  }
-}
-
-.info-block {
-  padding-top: 30px;
-}
-.info-block__title {
-  display: inline-block;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 35px;
-  color: #274C5B;
-}
-.info-block__content {
-  width: 85%;
-}
-.info-block__text {
-  color: #525C60;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
-  padding-bottom: 30px;
-}
-.info-block__container {
-  display: flex;
-  flex-direction: row;
-}
-.info-block__icon-container {
-  width: 15%;
 }
 
 * {

@@ -15,7 +15,7 @@
 }
 .nav{
     &__list {
-        display: none;
+        display: flex;
         gap: 40px;
         align-items: center;
     }

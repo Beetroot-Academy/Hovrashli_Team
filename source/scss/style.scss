@@ -1,8 +1,8 @@
 @use 'variables' as *;
 @use 'font-mixin' as *;
 @use 'header';
-@use 'footer';
 @use 'about_us.scss' as *;
+@use 'footer';
 
 * {
     margin: 0;
