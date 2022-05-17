@@ -50,6 +50,7 @@
   order: 1;
   text-align: right;
   margin-right: 20px;
+  width: 25%;
 }
 @media screen and (max-width: 768px) {
   .footer__contact {
@@ -62,6 +63,7 @@
   order: 3;
   text-align: left;
   margin-left: 20px;
+  width: 25%;
 }
 @media screen and (max-width: 768px) {
   .footer__utility {
@@ -92,7 +94,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 20px 0 0 0;
+  padding: 20px 0;
   border-top: 1px solid #D5D5D5;
 }
 @media screen and (max-width: 768px) {
