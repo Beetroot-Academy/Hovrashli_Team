@@ -78,23 +78,44 @@
 .subtitle {}
 
 .btn {
+    // display: flex;
+    // align-items: center;
+    // justify-content: end;
+    // padding: 0px 9px;
+    // gap: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1px 9px;
+    gap: 25px;
     border: none;
     border-radius: 16px;
-    width: 219px;
-    height: 82px;
+    width: 200px;
+    height: 80px;
     &__arrow {
-        margin-left: 24px;
-        position: absolute;
+        position: relative;
         display: inline-block;
-       padding: 11px 12px;
+       width: 38px;
+       height: 34px;
        background-color: #335B6B; 
        border-radius: 100px ;
        &::after{
            content: '';
+           position: absolute;
            display: block;
            background-image: url(/assets/arrow.svg);
-
+           background-repeat: no-repeat;
+           background-position: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+           width: 18px;
+            height: 15px;
        }
+    }
+    &__text{
+        display: inline-block;
+        margin: 25px 25px 25px 33px;
     }
 }
 
