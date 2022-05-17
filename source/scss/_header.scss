@@ -5,23 +5,24 @@
     padding-top: 40px;
     padding-bottom: 40px;
 
-    &_container {
+    &__container {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
 
-
-    &_list {
-        display: flex;
+}
+.nav{
+    &__list {
+        display: none;
         gap: 40px;
         align-items: center;
     }
-
-
-
-    &_link {
+    
+    
+    
+    &__link {
         font-family: 'Roboto';
             font-style: normal;
             font-weight: 400;
@@ -35,9 +36,69 @@
             }
     }
 }
+.burger {
+    display: none;
+    height: 40px;
+    flex-direction: column;
+    z-index: 3;
+    position: relative;
+    .bar {
+        display: block;
+        width: 30px;
+        height: 2px;
+        margin: 5px auto;
+        background-color: #AAAAAB;
+        transition: transform 0.3s linear, opacity 0.3s linear, background-color 0.3s linear;
+    }
+
+    &.active .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+        background-color: #EFD372;
+    }
+
+    &.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    &.active .bar:nth-child(3) {
+        transform: translateY(-15px) rotate(-45deg);
+        background-color: #EFD372;
+    }
+
+    &.active {
+        display: flex;
+    }
+}
+@media screen and (max-width:$tablet) {
+    .burger {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .nav__list {
+    display: flex;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    max-width: 300px;
+    width: 100%;
+    background: $light-blue;
+    z-index: 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right .2s ease-in-out;
+    
+    &.active {
+        right: 0;
+    }
+    position: fixed;
+}
+}
+
 .hero {
     margin-bottom: 140px;
-
+    padding-bottom: 50px;
     background-image: url('/assets/hero.png');
     background-size: cover;
     background-position: center;
@@ -53,14 +114,14 @@
 
     &__subtitle {
         font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 70px;
-            line-height: 1.2;
-            letter-spacing: 0.36px;
-            color: #274C5B;
-            width: 40%;
-            padding-bottom: 30px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 1.2;
+        letter-spacing: 0.36px;
+        color: #274C5B;
+        width: 40%;
+        padding-bottom: 30px;
     }
 
 
@@ -78,11 +139,7 @@
 .subtitle {}
 
 .btn {
-    // display: flex;
-    // align-items: center;
-    // justify-content: end;
-    // padding: 0px 9px;
-    // gap: 25px;
+
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -115,7 +172,29 @@
     }
     &__text{
         display: inline-block;
-        margin: 25px 25px 25px 33px;
+        font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 1.7;
+
+            letter-spacing: 0.36px;
+            text-transform: capitalize;
+        
+            color: $deep-blue;
     }
 }
 
+@media screen and (max-width:$tablet) {
+    .hero{
+        text-align: center;
+        
+        &__subtitle{
+            width: 100%;
+        }
+        .btn{
+            margin: 0 auto 70px;
+        }
+        
+    }   
+}
