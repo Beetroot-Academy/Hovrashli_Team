@@ -34,6 +34,56 @@ a {
     display: block;
     color: black;
 }
+
+.container__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.card {
+  border-radius: 30px;
+  flex-basis: calc(100% / 2);
+}
+
+.card__banana {
+background-image: url(/assets/banana.png);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.card__peach {
+background-image: url(/assets/peach.png);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.card__title {
+  font-family: 'Yellowtail';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 65px;
+  letter-spacing: 0.36px;
+  color: white;
+  margin: 105px 484px 0 55px;
+}
+
+.card__text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: 0.36px;
+  color: white;
+  padding: 0 400px 105px 55px;
+}
+
+.text-peach {
+  color: $deep-blue;
+}
 .title {
     font-family: 'Yellowtail';
     font-style: normal;
@@ -43,4 +93,53 @@ a {
     letter-spacing: 0.36px;
     text-transform: capitalize;
     color: $light-blue;
+} 
+.btn {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1px 9px;
+    gap: 25px;
+    border: none;
+    border-radius: 16px;
+    width: 200px;
+    height: 80px;
+
+    &__arrow {
+        position: relative;
+        display: inline-block;
+        width: 38px;
+        height: 34px;
+        background-color: #335B6B;
+        border-radius: 100px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            background-image: url(/assets/arrow.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 18px;
+            height: 15px;
+        }
+    }
+
+    &__text {
+        display: inline-block;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 1.7;
+
+        letter-spacing: 0.36px;
+        text-transform: capitalize;
+
+        color: $deep-blue;
+    }
 }
