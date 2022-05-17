@@ -1,26 +1,36 @@
 @use 'variables' as *;
 @use 'font-mixin' as *;
+@use 'header';
+@use 'footer';
 
 
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Open Sans', sans-serif;
 }
 .container{
-    max-width: 1390px;
+    max-width: 1380px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
 }
-ul, ol{
+
+ul, ol {
     list-style: none;
 }
-img{
+
+img{ 
     max-width: 100%;
 }
-a{
+
+a {
     text-decoration: none;
-    cursor:pointer;
+    cursor: pointer;
     display: block;
     color: black;
 }
@@ -70,3 +80,13 @@ background-position: center;
   color: white;
   padding: 0 400px 105px 55px;
 }
+.title {
+    font-family: 'Yellowtail';
+    font-style: normal;
+    font-weight: 400;
+    @include fluid-font(27px, 36px);
+    line-height: 1.8;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+    color: $light-blue;
+} 
