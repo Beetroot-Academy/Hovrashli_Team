@@ -11,7 +11,6 @@ body {
 
 .container {
   max-width: 1390px;
-  width: 90%;
 }
 
 ul, ol {
@@ -29,25 +28,28 @@ a {
   color: black;
 }
 
+.container__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 50px;
+}
+
 .card {
-  width: 665px;
-  height: 378px;
-  margin: 20px;
+  border-radius: 30px;
+  flex-basis: 50%;
 }
 
 .card__banana {
   background-image: url(/assets/banana.png);
-  color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .card__peach {
   background-image: url(/assets/peach.png);
-}
-
-.container__cards {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .card__title {
@@ -55,19 +57,10 @@ a {
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
-  font-size: calc(20px + (36 - 20) * ((100vw - 325px) / (1240 - 325)));
   line-height: 65px;
-  padding: 105px 0 0 55px;
-}
-@media screen and (max-width: 325px) {
-  .card__title {
-    font-size: 20px;
-  }
-}
-@media screen and (min-width: 1240px) {
-  .card__title {
-    font-size: 36px;
-  }
+  letter-spacing: 0.36px;
+  color: white;
+  margin: 105px 484px 0 55px;
 }
 
 .card__text {
@@ -75,27 +68,9 @@ a {
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
-  font-size: calc(20px + (40 - 20) * ((100vw - 325px) / (1240 - 325)));
   line-height: 52px;
   letter-spacing: 0.36px;
-  padding: 0 0 0 55px;
-}
-@media screen and (max-width: 325px) {
-  .card__text {
-    font-size: 20px;
-  }
-}
-@media screen and (min-width: 1240px) {
-  .card__text {
-    font-size: 40px;
-  }
-}
-
-.card__peach h4 {
-  color: #7EB693;
-}
-
-.card__peach p {
-  color: #274C5B;
+  color: white;
+  padding: 0 400px 105px 55px;
 }
 /*# sourceMappingURL=style.css.map */

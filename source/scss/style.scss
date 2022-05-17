@@ -11,7 +11,6 @@ body{
 }
 .container{
     max-width: 1390px;
-    width: 90%;
 }
 ul, ol{
     list-style: none;
@@ -26,55 +25,48 @@ a{
     color: black;
 }
 
-.card {
-  width: 665px;
-  height: 378px;
-  margin: 20px;
-}
-
-
-
-.card__banana {
-  background-image: url(/assets/banana.png);
-  color: #FFFFFF;
-}
-  
-.card__peach {
-  background-image: url(/assets/peach.png);
-}
-  
 .container__cards {
   display: flex;
-  justify-content: center;
   flex-direction: row;
+  justify-content: space-between;
+  gap: 50px;
 }
-  
+
+.card {
+  border-radius: 30px;
+  flex-basis: calc(100% / 2);
+}
+
+.card__banana {
+background-image: url(/assets/banana.png);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.card__peach {
+background-image: url(/assets/peach.png);
+background-repeat: no-repeat;
+background-position: center;
+}
+
 .card__title {
-  font-family: "Yellowtail";
+  font-family: 'Yellowtail';
   font-style: normal;
   font-weight: 400;
-  @include fluid-font(20px, 36px);
+  font-size: 36px;
   line-height: 65px;
-  padding: 105px 0 0 55px;
+  letter-spacing: 0.36px;
+  color: white;
+  margin: 105px 484px 0 55px;
 }
-  
+
 .card__text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    @include fluid-font(20px, 40px);
-    line-height: 52px;
-    letter-spacing: 0.36px;
-    padding: 0 0 0 55px;
-  }
-
-  .card__peach h4 {
-    color: $light-blue;
-  }
-
-  .card__peach p {
-    color: $deep-blue;
-  }
-
-
-  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: 0.36px;
+  color: white;
+  padding: 0 400px 105px 55px;
+}
