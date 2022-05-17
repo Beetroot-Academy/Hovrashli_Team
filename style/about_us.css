@@ -105,33 +105,4 @@
 .info-block__icon-container {
   width: 15%;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-}
-
-.container {
-  max-width: 1390px;
-  width: 90%;
-}
-
-ul, ol {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-  display: block;
-  color: black;
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=about_us.css.map */
